@@ -3,6 +3,7 @@ import java.util.*;
 public class cotest4_1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+	
 		int n= scanner.nextInt();
 		//해시맵을 이용해서 key, value로 
 		HashMap<Character, Integer> map= new HashMap<>();
@@ -23,9 +24,10 @@ public class cotest4_1 {
 			
 		}
 		System.out.print(answer);
+	
 		
-		
-		/*->이렇게 푸는게 틀린건가..?
+		/*
+		 * 내가 푼 방법 -
 		int n= scanner.nextInt();
 		char[] p= {'A', 'B', 'C', 'D', 'E'};
 		String str= scanner.next();
@@ -43,7 +45,7 @@ public class cotest4_1 {
 			
 			if(num>max) {
 				max=num;
-				answer=list[i];
+				answer=p[i];
 		}
 		}
 		System.out.print(answer);
