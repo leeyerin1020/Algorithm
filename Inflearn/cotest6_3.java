@@ -1,4 +1,5 @@
 package Unit6;
+//»ðÀÔÁ¤·Ä-> 
 import java.util.Scanner;
 public class cotest6_3{
 	public static void main(String[] args) {
