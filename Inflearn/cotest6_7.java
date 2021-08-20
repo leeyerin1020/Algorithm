@@ -25,7 +25,7 @@ public class cotest6_7 {
 			list.add(new Point(x,y));
 		}
 		Collections.sort(list);
-		
+		for(Point o :list)System.out.println(o.x+" "+o.y);
 		/*³»°¡ Ç¬ ¹æ¹ý ¿Ö Æ²·ÈÀ»±î
 		int[][] list= new int[n][2];
 		for(int i=0; i<n; i++) {
