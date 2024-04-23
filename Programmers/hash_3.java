@@ -6,13 +6,13 @@ public class hash_3 {
 		HashMap<String, Integer> hash= new HashMap<>();
 		for(int i=0; i<clothes.length; i++) {
 			hash.put(clothes[i][1], hash.getOrDefault(clothes[i][1],0)+1);
-		}//getOrDefaultÇÔ¼ö¸¦ »ç¿ëÇÏ¿© ÇØ´ç Ä«Å×°í¸®ÀÇ ¿ÊÀÇ ¼ö¸¦ Áõ°¡½ÃÄÑÁØ´Ù!
+		}//getOrDefaultí•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì—¬ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ì˜·ì˜ ìˆ˜ë¥¼ ì¦ê°€ì‹œì¼œì¤€ë‹¤!
 		for(String x: hash.keySet()) {
-			answer*=(hash.get(x)+1);//±×·¸°Ô ÇØ¼­ °¢ Á¾·ùÀÇ ¿ÊÀÇ ¼ö¸¦ ¾Ë¾Æ³½´Ù!
+			answer*=(hash.get(x)+1);//ê·¸ë ‡ê²Œ í•´ì„œ ê° ì¢…ë¥˜ì˜ ì˜·ì˜ ìˆ˜ë¥¼ ì•Œì•„ë‚¸ë‹¤!
 		}
         answer-=1;
         
-        //key,value ±¸Á¶ÀÎ ÇØ½¬¸¦ ÀÌ¿ëÇÏ¿© ±× ºÎ·ùÀÇ ¿Ê->keyÀÌ¿ë, value´Â ¿ÊÀÇ ÀÌ¸§ÀÌ ¾Æ´Ñ, °³¼ö¸¦ ³Ö¾îÁÜÀ¸·Î½á ÇØ°á       
+        //key,value êµ¬ì¡°ì¸ í•´ì‰¬ë¥¼ ì´ìš©í•˜ì—¬ ê·¸ ë¶€ë¥˜ì˜ ì˜·->keyì´ìš©, valueëŠ” ì˜·ì˜ ì´ë¦„ì´ ì•„ë‹Œ, ê°œìˆ˜ë¥¼ ë„£ì–´ì¤Œìœ¼ë¡œì¨ í•´ê²°       
       
         return answer;
     }
@@ -21,6 +21,8 @@ public class hash_3 {
 		String[][] str1= {{"yellowhat", "headgear"}, 
 				{"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};		
 		System.out.println(solution(str1));
+
+		
 		
 	}
 	
